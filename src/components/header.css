@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-toggle {
+    @apply bottom-0 right-[120px] top-0 z-10 flex h-11 w-11 cursor-pointer items-center justify-center;
+  }
+
+  .menu-button {
+    @apply relative z-10 h-[1px] w-7 transition-all duration-500 md:h-[2px] md:w-10 lg:group-hover:bg-transparent;
+  }
+
+  .menu-button::before,
+  .menu-button::after {
+    content: "";
+    @apply absolute right-0 h-full w-full origin-center bg-inherit transition-all duration-500 ease-in-out;
+  }
+
+  .menu-button::before {
+    @apply -top-[10px] md:-top-3 lg:group-hover:top-0 lg:group-hover:rotate-45;
+  }
+
+  .menu-button::after {
+    @apply -bottom-[10px] md:-bottom-3 lg:group-hover:bottom-0 lg:group-hover:-rotate-45;
+  }
+}
