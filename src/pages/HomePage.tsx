@@ -5,12 +5,13 @@ import {
   NewsCard,
   SectionTitle,
   ContactForm,
+  ViewMoreButton,
 } from "../components";
 
 const HomePage: Component = () => {
   return (
     <>
-      <div class="fixed left-0 top-0 -z-10">
+      <div class="fixed left-0 top-0 -z-20">
         <video
           src="/media/hero.mp4"
           muted
@@ -34,7 +35,7 @@ const HomePage: Component = () => {
         </div>
       </section>
       {/* Vision Section */}
-      <section class="grid grid-cols-1 items-start bg-background p-8 lg:min-h-screen lg:grid-cols-2">
+      <section class="grid grid-cols-1 items-start bg-background p-8 lg:grid-cols-2">
         <div class="p-8">
           <SectionTitle text="VISION" />
           <p class="mb-4 mt-8 px-2 text-2xl leading-8 tracking-widest md:mx-8 md:text-3xl md:leading-10 lg:my-20">
@@ -64,12 +65,7 @@ const HomePage: Component = () => {
               <p class="text-lg leading-8 md:text-xl md:leading-9">
                 テクノロジーと戦略の融合を通じてDXをサポートします。課題の明確化からシステムの開発・導入に至るまで、お客様のビジョンを現実にするために全力で取り組みます。
               </p>
-              <A
-                href="/"
-                class="hidden h-fit w-fit border-2 border-onBackground px-16 py-4 lg:block"
-              >
-                VIEW MORE
-              </A>
+              <ViewMoreButton href="/services/dx" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
               <div class="h-72 w-full bg-onBackground"></div>
@@ -84,12 +80,7 @@ const HomePage: Component = () => {
               <p class="text-lg leading-8 md:text-xl md:leading-9">
                 最新のAI技術を駆使し、各業界の生産性を向上させるSaaSプロダクトを提供しています。我々はソリューションを通じて、お客様の競争力を高め、効率的な業務プロセスを実現します。
               </p>
-              <A
-                href="/"
-                class="hidden h-fit w-fit border-2 border-onBackground px-16 py-4 lg:block"
-              >
-                VIEW MORE
-              </A>
+              <ViewMoreButton href="/services/ai" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
               <div class="h-72 w-full bg-onBackground"></div>
@@ -143,18 +134,13 @@ const HomePage: Component = () => {
               <p class="text-center md:text-start">
                 <span class="text-3xl md:text-5xl">01</span>
                 <span class="ml-4 text-2xl md:ml-8 md:text-4xl">
-                  DXソリューション
+                  ブロックチェーン事業
                 </span>
               </p>
               <p class="text-lg leading-8 md:text-xl md:leading-9">
-                いくら岡田さんへ命令文芸突然批評が進んまし火事この女あなたか懊悩とってご鑑定ませですでございば、こんな時間は私か私立鼻を待っば、岡田さんのので先生のそこの近頃同お話としからそれ自分にお運動にするようにとうていご解釈を解らなですば、ついにしかるに発表に申し上げなているた事をしだろた。
+                2WINSはAIとブロックチェーンを融合させる未来のテクノロジーに向けて前進しています。AIは処理を自動化しますが、ブロックチェーンは処理を証明し、信頼性を高めます。両者を組み合わせた革新的なソリューションモデルの先駆けを目指していきます。
               </p>
-              <A
-                href="/"
-                class="hidden h-fit w-fit border-2 border-onBackground px-16 py-4 lg:block"
-              >
-                VIEW MORE
-              </A>
+              <ViewMoreButton href="/strengths" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
               <div class="h-72 w-full bg-onBackground"></div>
@@ -164,17 +150,14 @@ const HomePage: Component = () => {
             <div class="space-y-4 md:space-y-8 md:p-4 lg:order-last">
               <p class="text-center md:text-start">
                 <span class="text-3xl md:text-5xl">02</span>
-                <span class="ml-4 text-2xl md:ml-8 md:text-4xl">AI SaaS</span>
+                <span class="ml-4 text-2xl md:ml-8 md:text-4xl">
+                  ソーシャルキャピタル事業
+                </span>
               </p>
               <p class="text-lg leading-8 md:text-xl md:leading-9">
-                いくら岡田さんへ命令文芸突然批評が進んまし火事この女あなたか懊悩とってご鑑定ませですでございば、こんな時間は私か私立鼻を待っば、岡田さんのので先生のそこの近頃同お話としからそれ自分にお運動にするようにとうていご解釈を解らなですば、ついにしかるに発表に申し上げなているた事をしだろた。
+                ソーシャルキャピタルを中心に据え、社内外の仲間たちと共に学び合い、協力し、新たな価値を生み出すためのプラットフォームを積極的に構築しています。私たちのコミュニティは、共に成長し、未来を創造する場所です。
               </p>
-              <A
-                href="/"
-                class="hidden h-fit w-fit border-2 border-onBackground px-16 py-4 lg:block"
-              >
-                VIEW MORE
-              </A>
+              <ViewMoreButton href="/strengths" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
               <div class="h-72 w-full bg-onBackground"></div>
@@ -182,16 +165,13 @@ const HomePage: Component = () => {
           </div>
         </div>
       </section>
-      {/* FAQ Section */}
+      {/* News Section */}
       <section class="bg-background p-8">
         <div class="flex flex-row items-center justify-center p-8 md:justify-between">
           <SectionTitle text="NEWS" />
-          <A
-            href="/"
-            class="mx-8 hidden h-fit w-fit border-2 border-onBackground px-16 py-4 md:block lg:block"
-          >
-            MORE NEWS
-          </A>
+          <div class="hidden md:mx-8 md:block">
+            <ViewMoreButton href="/news" text="MORE NEWS" show="md" />
+          </div>
         </div>
         <div class="grid grid-cols-1 gap-8 px-2 py-8 md:grid-cols-2 md:px-16 lg:grid-cols-4">
           <NewsCard
@@ -227,9 +207,15 @@ const HomePage: Component = () => {
             date="2023.09.08"
           />
         </div>
+        <div class="mx-auto my-2 block w-fit md:my-0 md:hidden">
+          <ViewMoreButton href="/news" text="MORE NEWS" show="all" />
+        </div>
       </section>
       {/* Contact Section */}
-      <section class="grid grid-cols-1 bg-background p-8 lg:min-h-screen lg:grid-cols-2">
+      <section
+        class="grid grid-cols-1 bg-background p-8 lg:min-h-screen lg:grid-cols-2"
+        id="contact"
+      >
         <div class="p-2 md:p-8">
           <SectionTitle text="CONTACT" />
           <p class="mb-4 mt-6 leading-6 tracking-widest md:mx-8 md:mt-10 md:px-2 md:text-xl md:leading-8 lg:my-20 lg:text-3xl lg:leading-10">

@@ -3,9 +3,9 @@ import { Component } from "solid-js";
 const NotFoundPage: Component = () => {
   return (
     <>
-      <div class="fixed left-0 top-0 -z-10">
+      <div class="fixed left-0 top-0 -z-20">
         <video
-          src="./assets/media/hero.mp4"
+          src="/media/hero.mp4"
           muted
           autoplay
           playsinline
@@ -14,8 +14,12 @@ const NotFoundPage: Component = () => {
         />
       </div>
       <div class="flex min-h-screen flex-col items-center justify-center">
-        <p class="my-10 text-8xl">404 Not Found</p>
-        <p class="my-8 text-4xl">ご指定のページが見つかりません</p>
+        <p class="my-6 text-4xl md:my-10 md:text-7xl lg:text-8xl">
+          404 Not Found
+        </p>
+        <p class="my-3 text-xl md:my-8 md:text-3xl lg:text-4xl">
+          ご指定のページが見つかりません
+        </p>
       </div>
     </>
   );
