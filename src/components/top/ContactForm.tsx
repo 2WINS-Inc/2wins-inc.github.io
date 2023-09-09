@@ -18,7 +18,7 @@ const ContactForm: Component = () => {
               <input
                 type="text"
                 name="company_name"
-                class="mt-2 w-full rounded-sm bg-onBackground px-4 py-2"
+                class="input-field"
                 placeholder="株式会社2WINS"
                 required
               />
@@ -32,7 +32,7 @@ const ContactForm: Component = () => {
               <input
                 type="text"
                 name="job_title"
-                class="mt-2 w-full rounded-sm bg-onBackground px-4 py-2"
+                class="input-field"
                 placeholder="代表取締役"
               />
             </td>
@@ -45,7 +45,7 @@ const ContactForm: Component = () => {
               <input
                 type="text"
                 name="last_name"
-                class="mt-2 w-full rounded-sm bg-onBackground px-4 py-2"
+                class="input-field"
                 placeholder="ツイ"
                 required
               />
@@ -57,7 +57,7 @@ const ContactForm: Component = () => {
               <input
                 type="text"
                 name="first_name"
-                class="mt-2 w-full rounded-sm bg-onBackground px-4 py-2"
+                class="input-field"
                 placeholder="ンズ"
                 required
               />
@@ -72,7 +72,7 @@ const ContactForm: Component = () => {
               <input
                 type="text"
                 name="email"
-                class="mt-2 w-full rounded-sm bg-onBackground px-4 py-2"
+                class="input-field"
                 placeholder="info@2winsinc.com"
                 required
               />
@@ -86,7 +86,7 @@ const ContactForm: Component = () => {
               <input
                 type="text"
                 name="phone"
-                class="mt-2 w-full rounded-sm bg-onBackground px-4 py-2"
+                class="input-field"
                 placeholder="000-0000-0000"
               />
             </td>
@@ -108,7 +108,7 @@ const ContactForm: Component = () => {
           <tr>
             <td class="text-center lg:text-start" colSpan={2}>
               <button
-                class="mt-4 border-2 border-onBackground px-16 py-2 lg:ml-2"
+                class="mt-4 border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% bg-[size:200%] bg-right px-16 py-2 transition-all duration-300 ease-in-out hover:bg-left hover:text-background lg:ml-2"
                 type="submit"
               >
                 お問い合わせ送信
