@@ -5,6 +5,7 @@ import NewsCard from "./top/NewsCard";
 import ContactForm from "./top/ContactForm";
 import ViewMoreButton from "./top/ViewMoreButton";
 import ProfileCard from "./about/ProfileCard";
+import SolutionCard from "./services/SolutionCard";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   ContactForm,
   ViewMoreButton,
   ProfileCard,
+  SolutionCard,
 };
