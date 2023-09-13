@@ -175,7 +175,7 @@ const HomePage: Component = () => {
         </div>
         <div class="grid grid-cols-1 gap-8 px-2 py-8 md:grid-cols-2 md:px-16 lg:grid-cols-4">
           <NewsCard
-            link=""
+            link="/news/1"
             thumbnail="/images/clients/vector.svg"
             title="社会を進化させるシステムを創る社会を進化させるシステムを創る社会を進化させるシステムを創る"
             avatar="/images/clients/vector.svg"
@@ -183,7 +183,7 @@ const HomePage: Component = () => {
             date="2023.09.08"
           />
           <NewsCard
-            link=""
+            link="/news/2"
             thumbnail="/images/clients/vector.svg"
             title="社会を進化させるシステムを創る社会を進化させるシステムを創る社会を進化させるシステムを創る"
             avatar="/images/clients/vector.svg"
@@ -191,7 +191,7 @@ const HomePage: Component = () => {
             date="2023.09.08"
           />
           <NewsCard
-            link=""
+            link="/news/3"
             thumbnail="/images/clients/vector.svg"
             title="社会を進化させるシステムを創る社会を進化させるシステムを創る社会を進化させるシステムを創る"
             avatar="/images/clients/vector.svg"
@@ -199,7 +199,7 @@ const HomePage: Component = () => {
             date="2023.09.08"
           />
           <NewsCard
-            link=""
+            link="/news/4"
             thumbnail="/images/clients/vector.svg"
             title="社会を進化させるシステムを創る社会を進化させるシステムを創る社会を進化させるシステムを創る"
             avatar="/images/clients/vector.svg"

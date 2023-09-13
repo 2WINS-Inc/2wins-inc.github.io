@@ -1,9 +1,10 @@
 /* @refresh reload */
 import "./index.css";
-import { render } from "solid-js/web";
+import { Router } from "@solidjs/router";
+import { ErrorBoundary, Suspense, render } from "solid-js/web";
 
 import App from "./App";
-import { Router } from "@solidjs/router";
+import ErrorPage from "./pages/ErrorPage";
 
 const root = document.getElementById("root");
 
@@ -15,9 +16,13 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(
   () => (
-    <Router>
-      <App />
-    </Router>
+    <Suspense>
+      <ErrorBoundary fallback={<ErrorPage />}>
+        <Router>
+          <App />
+        </Router>
+      </ErrorBoundary>
+    </Suspense>
   ),
   root!,
 );
