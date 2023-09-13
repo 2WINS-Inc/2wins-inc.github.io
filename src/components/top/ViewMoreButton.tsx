@@ -11,7 +11,10 @@ const ViewMoreButton: Component<{
   return (
     <A
       href={merged.href}
-      class="h-fit w-fit border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% bg-[size:200%] bg-right px-16 py-4 transition-all duration-300 ease-in-out hover:bg-left hover:text-background"
+      class="
+        h-fit w-fit border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% 
+        bg-[size:200%] bg-right px-16 py-4 transition-all duration-500 ease-in-out hover:bg-left hover:text-background
+      "
       classList={{
         "hidden lg:block": merged.show === "lg",
         "hidden md:block": merged.show === "md",

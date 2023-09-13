@@ -35,7 +35,7 @@ const HomePage: Component = () => {
         </div>
       </section>
       {/* Vision Section */}
-      <section class="grid grid-cols-1 items-start bg-background p-8 lg:grid-cols-2">
+      {/* <section class="grid grid-cols-1 items-start bg-background p-8 lg:grid-cols-2">
         <div class="p-8">
           <SectionTitle text="VISION" />
           <p class="mb-4 mt-8 px-2 text-2xl leading-8 tracking-widest md:mx-8 md:text-3xl md:leading-10 lg:my-20">
@@ -47,7 +47,7 @@ const HomePage: Component = () => {
             近年，高度IT人材の不足により，素晴らしいアイデアが日の目を見ずに機会を損失してしまうことが往々にして起こっています．高度な知識を持つメンバーが参画することで，より多くのアイデアが社会を豊かにするはずです．優秀で意欲のある個が積極的に協力し合い，個々の特性が最大限発揮できる組織を作ることで，一人一人が社会に大きな利益をもたらす技術者集団を目指すことを決意しました．高い視座を持つ仲間と共に人類の進歩に貢献します．
           </p>
         </div>
-      </section>
+      </section> */}
       {/* Services Section */}
       <section class="bg-background p-8 lg:min-h-screen">
         <div class="p-8">
