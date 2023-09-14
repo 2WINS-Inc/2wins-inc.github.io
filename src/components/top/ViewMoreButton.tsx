@@ -12,6 +12,7 @@ const ViewMoreButton: Component<{
     <A
       href={merged.href}
       class="
+        tracking-[0.25rem] font-medium
         h-fit w-fit border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% 
         bg-[size:200%] bg-right px-16 py-4 transition-all duration-500 ease-in-out hover:bg-left hover:text-background
       "

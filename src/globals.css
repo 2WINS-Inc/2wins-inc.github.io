@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overscroll-y-none bg-background font-serif text-onBackground;
+    @apply overscroll-y-none bg-background font-sans text-onBackground;
   }
 }
 

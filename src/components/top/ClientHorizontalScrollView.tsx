@@ -2,7 +2,7 @@ import { Component, For } from "solid-js";
 import ClientCard from "./ClientCard";
 
 const ClientHorizontalScrollView: Component<{
-  list: { src: string; alt: string }[];
+  list?: { src: string; alt: string }[];
 }> = (props) => {
   return (
     <div class="hide-scrollbar relative my-10 h-40 lg:my-16">

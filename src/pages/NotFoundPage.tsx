@@ -14,10 +14,10 @@ const NotFoundPage: Component = () => {
         />
       </div>
       <div class="flex min-h-screen flex-col items-center justify-center">
-        <p class="my-6 text-4xl md:my-10 md:text-7xl lg:text-8xl">
+        <p class="my-6 text-4xl font-semibold tracking-wide md:my-10 md:text-7xl lg:text-8xl">
           404 Not Found
         </p>
-        <p class="my-3 text-xl md:my-8 md:text-3xl lg:text-4xl">
+        <p class="my-3 text-xl font-medium tracking-wider md:my-8 md:text-3xl lg:text-4xl">
           ご指定のページが見つかりません
         </p>
       </div>

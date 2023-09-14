@@ -100,7 +100,7 @@ const ContactForm: Component = () => {
                 name="message"
                 class="mt-2 w-full resize-none rounded-sm bg-onBackground px-4 py-2"
                 placeholder="あああ！！！"
-                rows={8}
+                rows={5}
                 required
               />
             </td>

@@ -13,7 +13,7 @@ const config: Config = {
         background: "#1b1b1f",
         onBackground: "#e3e2e6",
       },
-      fontFamily: { serif: "Noto Serif JP" },
+      fontFamily: { sans: "Noto Sans JP" },
       animation: {
         "infinity-scroll-left__first":
           "infinity-scroll-left__first 40s infinite linear 0.5s both",
