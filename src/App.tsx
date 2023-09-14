@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage";
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const AIPage = lazy(() => import("./pages/AIPage"));
 const DXPage = lazy(() => import("./pages/DXPage"));
-const NewsPage = lazy(() => import("./pages/NewsPage"));
+// const NewsPage = lazy(() => import("./pages/NewsPage"));
 const NewsListPage = lazy(() => import("./pages/NewsListPage"));
 const StrengthsPage = lazy(() => import("./pages/StrengthsPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
