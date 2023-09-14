@@ -49,7 +49,7 @@ const Header: Component = () => {
         </div>
       </div>
       <nav
-        class="fixed left-0 top-0 h-screen w-screen transition-all duration-1000 ease-in-out"
+        class="fixed left-0 top-0 h-screen w-screen -translate-x-full opacity-0 transition-all duration-1000 ease-in-out "
         classList={{
           "opacity-0 -translate-x-full delay-700": !open(),
           "opacity-100 translate-x-0": open(),
