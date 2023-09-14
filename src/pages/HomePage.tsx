@@ -68,7 +68,15 @@ const HomePage: Component = () => {
               <ViewMoreButton href="/services/dx" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
-              <div class="h-72 w-full bg-onBackground"></div>
+              <div class="group h-72 w-full overflow-hidden rounded-md">
+                <A href="/services/dx">
+                  <img
+                    src="/images/top/dx.jpg"
+                    alt="DX"
+                    class="object-cover opacity-90 transition-all duration-500 group-hover:scale-110 group-hover:cursor-pointer"
+                  />
+                </A>
+              </div>
             </div>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
@@ -83,7 +91,15 @@ const HomePage: Component = () => {
               <ViewMoreButton href="/services/ai" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
-              <div class="h-72 w-full bg-onBackground"></div>
+              <div class="group h-72 w-full overflow-hidden rounded-md">
+                <A href="/services/ai">
+                  <img
+                    src="/images/top/ai.jpg"
+                    alt="AI"
+                    class="object-cover opacity-90 transition-all duration-500 group-hover:scale-110 group-hover:cursor-pointer"
+                  />
+                </A>
+              </div>
             </div>
           </div>
         </div>
@@ -143,7 +159,15 @@ const HomePage: Component = () => {
               <ViewMoreButton href="/strengths" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
-              <div class="h-72 w-full bg-onBackground"></div>
+              <div class="group h-72 w-full overflow-hidden rounded-md">
+                <A href="/strengths">
+                  <img
+                    src="/images/top/blockchain.jpg"
+                    alt="Blockchain"
+                    class="object-cover opacity-90 transition-all duration-500 group-hover:scale-110 group-hover:cursor-pointer"
+                  />
+                </A>
+              </div>
             </div>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
@@ -160,7 +184,15 @@ const HomePage: Component = () => {
               <ViewMoreButton href="/strengths" />
             </div>
             <div class="flex flex-row justify-center py-6 md:px-4 lg:px-24">
-              <div class="h-72 w-full bg-onBackground"></div>
+              <div class="group h-72 w-full overflow-hidden rounded-md">
+                <A href="/strengths">
+                  <img
+                    src="/images/top/community.jpg"
+                    alt="Community"
+                    class="object-cover opacity-90 transition-all duration-500 group-hover:scale-110 group-hover:cursor-pointer"
+                  />
+                </A>
+              </div>
             </div>
           </div>
         </div>

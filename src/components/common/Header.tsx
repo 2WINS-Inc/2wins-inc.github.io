@@ -16,14 +16,25 @@ const Header: Component = () => {
       <div class="flex flex-row items-center justify-between px-6 py-6 md:px-10">
         <A
           href="/"
-          class="z-20 p-2 text-2xl font-extralight transition-all duration-500 md:text-3xl"
+          class="z-20 flex flex-row items-start p-2 text-2xl font-extralight transition-all duration-500 md:text-3xl"
           classList={{
             "text-onBackground delay-700": !open(),
             "text-background": open(),
           }}
           onclick={close}
         >
-          2WINS, Inc.
+          <span>
+            <img
+              src="/images/logo.svg"
+              alt="2WINS"
+              class="h-9 w-9 transition-all duration-500 md:h-10 md:w-10"
+              classList={{
+                "logo-white delay-700": !open(),
+                "logo-blue": open(),
+              }}
+            />
+          </span>
+          <span class="ml-3">2WINS, Inc.</span>
         </A>
         <div class="menu-toggle group" onClick={toggle}>
           <p
