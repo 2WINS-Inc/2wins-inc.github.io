@@ -116,7 +116,7 @@ const HomePage: Component = () => {
             <div class="space-y-8 md:space-y-10 md:p-4">
               <ItemTitle number="01" title="DXソリューション" />
               <p class="text-justify text-base font-normal leading-8 tracking-widest md:text-xl md:leading-10">
-                テクノロジーと戦略の融合を通じてDXをサポートします。課題の明確化からシステムの開発・導入に至るまで、お客様のビジョンを現実にするために全力で取り組みます。
+                様々なお客様の課題を解決するために、我々の持つ技術を提供しています。課題の明確化、ソリューション提案、システム開発・導入・保守運用に至るまで、徹底的にサポート致します。
               </p>
               <ViewMoreButton href="/services/dx" />
             </div>
@@ -130,7 +130,7 @@ const HomePage: Component = () => {
             <div class="space-y-8 md:space-y-10 md:p-4 lg:order-last">
               <ItemTitle number="02" title="AI SaaSプロダクト" />
               <p class="text-justify text-base font-normal leading-8 tracking-widest md:text-xl md:leading-10">
-                先端AI技術を駆使し、各業界の生産性を向上させるSaaSプロダクトを提供しています。我々はソリューションを通じ、お客様の競争力を高め、効率的な業務プロセスを実現します。
+                生成AIや画像処理など最新のAI技術をはじめとしたあらゆる技術を駆使し、各業界の生産性を向上させるSaaSを提供しています。我々はソリューションを通じて、お客様の競争力を高め、効率的な業務プロセスを実現します。
               </p>
               <ViewMoreButton href="/services/ai" />
             </div>
@@ -147,22 +147,25 @@ const HomePage: Component = () => {
         <div class="grid grid-cols-1 space-y-4 bg-background md:space-y-12 md:px-8 md:py-8 lg:grid-cols-2 lg:space-y-0">
           <SectionTitle text="CLIENTS" />
           <p class="px-4 text-justify text-base font-normal leading-8 tracking-widest md:px-8 md:text-xl md:leading-10 lg:pl-4">
-            社会を進化させるシステムを創る社会を進化させるシステムを創る社会を進化させるシステムを創る
+            弊社はこれまで多くのお客様をご支援してきました。
+            <br class="hidden lg:block" />
+            （一部抜粋）
           </p>
         </div>
         <ClientHorizontalScrollView list={clients()} />
       </section>
       {/* Strengths Section */}
-      <section class="bg-background p-8">
+      <section id="strengths" class="bg-background p-8">
         <div class="grid grid-cols-1 space-y-4 bg-background md:space-y-12 md:px-8 md:py-8 lg:grid-cols-2 lg:space-y-0">
           <SectionTitle text="STRENGTHS" />
           <div class="space-y-4 px-4 text-justify text-base font-normal leading-8 tracking-widest md:px-8 md:text-xl md:leading-10 lg:pl-4">
             <p class="font-bold">
-              最新AIへの確かな知見、ブロックチェーン領域での幅広い活動実績、独自のコミュニティという3つのリソースの正の相関が他にはないソリューションの実現可能性を高めます。
+              2WINSは、東大のアカデミアで最先端技術を研究するメンバーによって設立されました。技術力には自信を持っており、あらゆる開発を短期間でこなすことが可能です。
             </p>
             <p>
-              2WINSは最新AIを取り入れた「DX ソリューション事業」「AI
-              Saas事業」に加え、ブロックチェーン領域での活動や、ソーシャルキャピタル活動を行い、2WINSにしかないエコシステムを形成しています。
+              圧倒的なAI開発技術に加え、ブロックチェーン領域にも進出しており、AIとブロックチェーンの融合を目指します。
+              <br />
+              また、2WINSの人材基盤を支えるソーシャルキャピタル事業では、日本が世界に誇る「本郷バレー」を目指すエコシステムを形成しています。
             </p>
           </div>
         </div>
@@ -171,12 +174,13 @@ const HomePage: Component = () => {
             <div class="space-y-8 md:space-y-10 md:p-4">
               <ItemTitle number="01" title="ブロックチェーン事業" />
               <p class="text-justify text-base font-normal leading-8 tracking-widest md:text-xl md:leading-10">
-                2WINSはAIとブロックチェーンを融合させる未来のテクノロジーに向けて前進しています。AIは処理を自動化しますが、ブロックチェーンは処理を証明し、信頼性を高めます。両者を組み合わせた革新的なソリューションモデルの先駆けを目指していきます。
+                AIとブロックチェーンを融合させた未来のテクノロジーを見据えて活動しています。
+                両者を組み合わせた革新的なソリューションモデルの先駆けを目指していきます。
               </p>
-              <ViewMoreButton href="/strengths" />
+              <ViewMoreButton href="https://2wins-inc.github.io/hongo-web3-valley" />
             </div>
             <ClickableImage
-              href="/strengths"
+              href="https://2wins-inc.github.io/hongo-web3-valley"
               src="/images/top/blockchain.jpg"
               alt="Blockchain"
             />
@@ -185,14 +189,14 @@ const HomePage: Component = () => {
             <div class="space-y-8 md:space-y-10 md:p-4 lg:order-last">
               <ItemTitle number="02" title="ソーシャルキャピタル事業" />
               <p class="text-justify text-base font-normal leading-8 tracking-widest md:text-xl md:leading-10">
-                ソーシャルキャピタルを中心に据え、社内外の仲間たちと共に学び合い、協力し、新たな価値を生み出すためのプラットフォームを積極的に構築しています。私たちのコミュニティは、共に成長し、未来を創造する場所です。
+                2WINSは、日本が世界に誇る「本郷バレー」のエコシステムの実現を目指し活動しています。中でも最も重要な「人材」にフォーカスし、日本社会を支える人材のプラットフォーム構築を目指しています。
               </p>
-              <ViewMoreButton href="/strengths" />
+              <ViewMoreButton href="/social-capital" />
             </div>
             <ClickableImage
-              href="/strengths"
+              href="/social-capital"
               src="/images/top/community.jpg"
-              alt="Community"
+              alt="Social Capital"
             />
           </div>
         </div>
