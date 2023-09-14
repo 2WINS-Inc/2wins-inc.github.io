@@ -46,6 +46,9 @@ const config: Config = {
         ".my-rotate-y-180": {
           transform: "rotateY(180deg)",
         },
+        ".my-rotate-y-0": {
+          transform: "rotateY(0deg)",
+        },
         ".preserve-3d": {
           transformStyle: "preserve-3d",
         },

@@ -14,7 +14,7 @@ const ProfileCard: Component<{
   return (
     <div class="group h-[360px] cursor-pointer perspective" onclick={toggle}>
       <div
-        class="relative h-full w-full duration-500 preserve-3d"
+        class="lg:my-rotate-y-0 relative h-full w-full duration-500 preserve-3d lg:group-hover:my-rotate-y-180"
         classList={{ "my-rotate-y-180": clicked() }}
       >
         {/* Front side */}
