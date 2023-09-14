@@ -25,15 +25,15 @@
     @apply -bottom-[10px] md:-bottom-3 lg:group-hover:bottom-0 lg:group-hover:-rotate-45;
   }
 
-  .header-link-open {
+  .delayed-opacity-transition {
     transition:
-      transform 0.7s 0s,
-      opacity 0.7s 1s;
+      all 0.7s 0s,
+      opacity 0.7s 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .header-link-closed {
+  .normal-transition {
     transition:
-      transform 0.7s 0s,
+      all 0.7s 0s,
       opacity 0.7s 0s;
   }
 }

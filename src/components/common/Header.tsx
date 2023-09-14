@@ -38,10 +38,10 @@ const Header: Component = () => {
         </div>
       </div>
       <nav
-        class="fixed left-0 top-0 h-screen transition-all duration-1000 ease-in-out"
+        class="fixed left-0 top-0 h-screen w-screen transition-all duration-1000 ease-in-out"
         classList={{
-          "opacity-0 w-0 delay-700": !open(),
-          "opacity-100 w-screen": open(),
+          "opacity-0 -translate-x-full delay-700": !open(),
+          "opacity-100 translate-x-0": open(),
         }}
       >
         <div class="h-full w-full bg-onBackground text-background">
@@ -76,8 +76,8 @@ const HeaderLink: Component<{
         href={props.href}
         class="block whitespace-nowrap text-5xl hover:translate-x-8 md:text-[80px]"
         classList={{
-          "opacity-0 header-link-closed cursor-default": !props.show(),
-          "opacity-100 header-link-open": props.show(),
+          "opacity-0 normal-transition cursor-default": !props.show(),
+          "opacity-100 delayed-opacity-transition": props.show(),
         }}
         onclick={props.show() ? props.onclick : (e) => e.preventDefault()}
       >
