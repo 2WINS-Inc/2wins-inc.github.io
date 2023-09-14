@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overscroll-y-none bg-background font-serif text-onBackground;
+    @apply overscroll-y-none bg-background font-sans text-onBackground;
   }
 }
 
@@ -20,5 +20,13 @@
 
   .pause-animation {
     animation-play-state: paused;
+  }
+
+  .logo-white {
+    filter: invert(99%) sepia(53%) saturate(270%) hue-rotate(182deg) brightness(95%) contrast(89%);
+  }
+
+  .logo-blue {
+    filter: invert(35%) sepia(82%) saturate(464%) hue-rotate(173deg) brightness(87%) contrast(80%);
   }
 }

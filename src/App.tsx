@@ -21,7 +21,7 @@ const App: Component = () => {
         <Route path="/services/ai" component={AIPage}></Route>
         <Route path="/services/dx" component={DXPage}></Route>
         <Route path="/news" component={NewsListPage}></Route>
-        <Route path="/news/:id" component={NewsPage}></Route>
+        {/* <Route path="/news/:id" component={NewsPage}></Route> */}
         <Route path="/strengths" component={StrengthsPage}></Route>
         <Route path="*" component={NotFoundPage}></Route>
       </Routes>

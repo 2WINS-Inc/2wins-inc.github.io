@@ -1,1 +1,0 @@
-import{t}from"./index-cb158a2e.js";const s=t('<section class="px-12 pb-2 pt-40 md:px-24 md:pb-8"><h1 class="w-full text-center text-5xl md:text-start md:text-8xl">News<span class="my-10 block h-[1px] bg-onBackground">'),a=()=>s();export{a as default};

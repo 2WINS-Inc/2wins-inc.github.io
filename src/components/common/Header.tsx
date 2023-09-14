@@ -16,14 +16,25 @@ const Header: Component = () => {
       <div class="flex flex-row items-center justify-between px-6 py-6 md:px-10">
         <A
           href="/"
-          class="z-20 p-2 text-2xl font-extralight transition-all duration-500 md:text-3xl"
+          class="z-20 flex flex-row items-start p-2 transition-all duration-500"
           classList={{
             "text-onBackground delay-700": !open(),
             "text-background": open(),
           }}
           onclick={close}
         >
-          2WINS, Inc.
+          <span>
+            <img
+              src="/images/logo.svg"
+              alt="2WINS"
+              class="h-9 w-9 transition-all duration-500 md:h-10 md:w-10"
+              classList={{
+                "logo-white delay-700": !open(),
+                "logo-blue": open(),
+              }}
+            />
+          </span>
+          <span class="ml-3 text-2xl tracking-wider md:text-3xl">2WINS</span>
         </A>
         <div class="menu-toggle group" onClick={toggle}>
           <p
@@ -74,7 +85,7 @@ const HeaderLink: Component<{
     <li>
       <A
         href={props.href}
-        class="block whitespace-nowrap text-5xl hover:translate-x-8 md:text-[80px]"
+        class="block whitespace-nowrap text-5xl font-medium tracking-wide hover:translate-x-8 md:text-[80px]"
         classList={{
           "opacity-0 normal-transition cursor-default": !props.show(),
           "opacity-100 delayed-opacity-transition": props.show(),
