@@ -12,26 +12,28 @@ const DXPage: Component = () => {
       </section>
       <section class="px-12 pb-16 md:px-16">
         <p class="text-justify text-lg font-normal leading-8 tracking-widest md:mx-8 md:text-xl md:leading-10">
-          テクノロジーと戦略の融合を通じてDXをサポートします。課題の明確化からシステムの開発・導入に至るまで、お客様のビジョンを現実にするために全力で取り組みます。
+          弊社の持つ技術力を駆使し、様々なお客様の課題を解決していきます。
+          <br />
+          課題の明確化、ソリューション提案、システム開発・導入・保守運用に至るまで、徹底的にサポート致します。
         </p>
         <div class="mt-10 grid gap-8 md:mx-8 lg:grid-cols-2">
           <SolutionCard
-            src="/images/services/community.jpg"
+            src="/images/top/dx.jpg"
             alt=""
             title="地方中小企業の課題解決"
-            body="現場と経営の両方の視点を網羅し、課題の洗練から技術的なアプローチへのブレイクダウン、システムの開発・導入まで一貫したサポートを提供します。"
+            body="地方中小企業のDXを支援。お客様の「いまここが不便なんだよね」という声から、課題を明確にし、システムの設計・開発まで一気通貫の支援を致します。"
           />
           <SolutionCard
-            src="/images/services/community.jpg"
+            src="/images/top/dx.jpg"
             alt=""
             title="教育機関の課題解決"
-            body="東大発スタートアップとして、日本の教育機関におけるDXを当たり前のものにし、学生と教職員が全ての手続きをよりスムーズに行える環境を普及させたいと考えています。"
+            body="私たちは東大発のスタートアップとして、身の回りの課題である「大学DX」に挑戦しました。貴重な学生生活において、機会損失のない世界を目指しています。"
           />
           <SolutionCard
-            src="/images/services/community.jpg"
+            src="/images/top/dx.jpg"
             alt=""
             title="開発現場の課題解決"
-            body="多様な課題を解決する手段として、開発プロジェクトへのメンバーの派遣も実施しております。"
+            body="様々な開発プロジェクトへのメンバー参画にも行っており、現場の人手・スキル不足の解消をサポート致します。"
           />
         </div>
       </section>

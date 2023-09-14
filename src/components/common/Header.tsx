@@ -65,7 +65,7 @@ const Header: Component = () => {
             <HeaderLink href="/about" text="About Us" {...props} />
             <HeaderLink href="/services/dx" text="DX Solutions" {...props} />
             <HeaderLink href="/services/ai" text="AI Solutions" {...props} />
-            <HeaderLink href="/strengths" text="Strengths" {...props} />
+            <HeaderLink href="/#strengths" text="Strengths" {...props} />
             <HeaderLink href="/news" text="News" {...props} />
             <HeaderLink href="/#contact" text="Contact" {...props} />
           </ul>

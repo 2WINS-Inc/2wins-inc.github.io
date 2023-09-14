@@ -8,7 +8,7 @@ const AIPage = lazy(() => import("./pages/AIPage"));
 const DXPage = lazy(() => import("./pages/DXPage"));
 // const NewsPage = lazy(() => import("./pages/NewsPage"));
 const NewsListPage = lazy(() => import("./pages/NewsListPage"));
-const StrengthsPage = lazy(() => import("./pages/StrengthsPage"));
+const SocialCapitalPage = lazy(() => import("./pages/SocialCapitalPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 const App: Component = () => {
@@ -22,7 +22,7 @@ const App: Component = () => {
         <Route path="/services/dx" component={DXPage}></Route>
         <Route path="/news" component={NewsListPage}></Route>
         {/* <Route path="/news/:id" component={NewsPage}></Route> */}
-        <Route path="/strengths" component={StrengthsPage}></Route>
+        <Route path="/social-capital" component={SocialCapitalPage}></Route>
         <Route path="*" component={NotFoundPage}></Route>
       </Routes>
     </>
