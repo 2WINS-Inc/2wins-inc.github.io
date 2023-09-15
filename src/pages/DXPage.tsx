@@ -28,6 +28,7 @@ const DXPage: Component = () => {
             alt=""
             title="教育機関の課題解決"
             body="私たちは東大発のスタートアップとして、身の回りの課題である「大学DX」に挑戦しました。貴重な学生生活において、機会損失のない世界を目指しています。"
+            href="https://www.utify.2winsinc.com/"
           />
           <SolutionCard
             src="/images/top/dx.jpg"
