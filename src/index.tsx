@@ -5,6 +5,7 @@ import { ErrorBoundary, Suspense, render } from "solid-js/web";
 
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage";
+import { FormProvider } from "./context/FormContext";
 
 const root = document.getElementById("root");
 
@@ -19,7 +20,9 @@ render(
     <Suspense>
       <ErrorBoundary fallback={<ErrorPage />}>
         <Router>
-          <App />
+          <FormProvider>
+            <App />
+          </FormProvider>
         </Router>
       </ErrorBoundary>
     </Suspense>

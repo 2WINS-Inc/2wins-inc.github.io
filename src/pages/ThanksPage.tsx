@@ -1,7 +1,8 @@
-import { A } from "@solidjs/router";
 import { Component } from "solid-js";
+import { ViewMoreButton } from "../components";
+import { A } from "@solidjs/router";
 
-const NotFoundPage: Component = () => {
+const ThanksPage: Component = () => {
   return (
     <>
       <div class="fixed left-0 top-0 -z-20">
@@ -15,13 +16,12 @@ const NotFoundPage: Component = () => {
         />
       </div>
       <div class="flex min-h-screen flex-col items-center justify-center">
-        <p class="my-6 text-4xl font-semibold tracking-wide md:my-10 md:text-7xl lg:text-8xl">
-          404 Not Found
+        <p class="my-6 text-center text-2xl font-semibold leading-[4rem] tracking-wide md:my-10 md:text-5xl md:leading-[6rem] lg:text-6xl lg:leading-[6rem]">
+          お問い合わせいただき
+          <br />
+          ありがとうございます
         </p>
-        <p class="my-3 text-xl font-medium tracking-wider md:my-8 md:text-3xl lg:text-4xl">
-          ご指定のページが見つかりません
-        </p>
-        <div class="mt-8">
+        <div class="mt-4">
           <A
             href="/"
             class="
@@ -38,4 +38,4 @@ const NotFoundPage: Component = () => {
   );
 };
 
-export default NotFoundPage;
+export default ThanksPage;

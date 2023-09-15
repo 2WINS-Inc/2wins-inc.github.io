@@ -246,7 +246,7 @@ const HomePage: Component = () => {
             </div>
             <div class="space-y-0.5 md:mx-10 lg:space-y-4">
               <p class="font-semibold">Phone</p>
-              <p class="lg:ml-4">000-0000-0000</p>
+              <p class="lg:ml-4">080-8734-7222</p>
             </div>
           </div>
         </div>
