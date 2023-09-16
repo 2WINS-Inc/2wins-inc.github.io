@@ -17,15 +17,13 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(
   () => (
-    <Suspense>
-      <ErrorBoundary fallback={<ErrorPage />}>
-        <Router>
-          <FormProvider>
-            <App />
-          </FormProvider>
-        </Router>
-      </ErrorBoundary>
-    </Suspense>
+    <ErrorBoundary fallback={<ErrorPage />}>
+      <Router>
+        <FormProvider>
+          <App />
+        </FormProvider>
+      </Router>
+    </ErrorBoundary>
   ),
   root!,
 );
