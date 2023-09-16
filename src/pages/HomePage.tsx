@@ -1,4 +1,4 @@
-import { Accessor, Component, For, createResource } from "solid-js";
+import { Accessor, Component, For, Suspense, createResource } from "solid-js";
 import {
   ClientHorizontalScrollView,
   NewsCard,
@@ -8,101 +8,23 @@ import {
   ItemTitle,
   ClickableImage,
 } from "../components";
-import axios from "axios";
+import { fetchNews } from "../utils/notion";
 
-type Client = {
-  src: string;
-  alt: string;
-};
-
-const fetchClients: () => Promise<Client[]> = async () => {
-  const clients: Client[] = [
-    { src: "/images/clients/vector.svg", alt: "株式会社ベクトル" },
-    {
-      src: "/images/clients/blocksmith.png",
-      alt: "株式会社BLOCKSMITH&Co.",
-    },
-    {
-      src: "/images/clients/reazon.png",
-      alt: "株式会社レアゾンホールディングス",
-    },
-    { src: "/images/clients/axell.png", alt: "株式会社アクセル" },
-    { src: "/images/clients/bitflyer.png", alt: "株式会社bitFlyer" },
-  ] as Client[];
-  return clients;
-};
-
-type News = {
-  link: string;
-  thumbnail: string;
-  title: string;
-  author: string;
-  date: string;
-};
-
-const fetchNews: () => Promise<News[]> = async () => {
-  const url =
-    "https://stingy-gray-3c3.notion.site/2WINS-HP-News-1af93e77ff254e059bd77e3369e55c15";
-
-  try {
-    const { data } = await axios.get(url, {
-      // headers: {
-      //   "Access-Control-Allow-Origin": "http://localhost:3000",
-      //   "Access-Control-Allow-Headers": "Content-Type",
-      // },
-    });
-    // const $ = load(data);
-
-    // $(".notion-table-view-row", data).each((index, element) => {
-    //   const title = $(element)
-    //     .find("")
-    //     .text()
-    //     .replace(/(\r\n|\n|\r|)/gm, "")
-    //     .trim();
-
-    //   console.log(title);
-    // });
-    return [] as News[];
-  } catch {
-    return [
-      {
-        link: "https://stingy-gray-3c3.notion.site/Blockchain-Hackathon-for-Students-1fbf37f067dc4b009f0e37e19ee7b22d",
-        thumbnail:
-          "https://stingy-gray-3c3.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fa98cacb9-e381-4d2c-a251-17897a82375c%2Fade2f5ae-5a67-4794-9e8b-538c3c6bf8ca%2Fblockchain.jpg?id=1fbf37f0-67dc-4b00-9f0e-37e19ee7b22d&table=block&spaceId=a98cacb9-e381-4d2c-a251-17897a82375c&width=600&userId=&cache=v2",
-        title: "Blockchain Hackathon for Studentsを開催しました",
-        author: "小川椋徹",
-        date: "2023.02.08",
-      },
-      {
-        link: "https://stingy-gray-3c3.notion.site/web3-web3-d8ed85ecd59b41989d45c2f9bf884805",
-        thumbnail:
-          "https://stingy-gray-3c3.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fa98cacb9-e381-4d2c-a251-17897a82375c%2Fce5ed47a-866d-4f2c-a33b-a676b533dedd%2Fcommunity.jpg?id=d8ed85ec-d59b-4198-9d45-c2f9bf884805&table=block&spaceId=a98cacb9-e381-4d2c-a251-17897a82375c&width=600&userId=&cache=v2",
-        title: "東大web3コミュニティ「本郷web3バレー」を設立しました",
-        author: "小川椋徹",
-        date: "2023.02.08",
-      },
-      {
-        link: "https://stingy-gray-3c3.notion.site/UTify-78fc0cfcff324316abba23c3b05e2c55",
-        thumbnail:
-          "https://stingy-gray-3c3.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fa98cacb9-e381-4d2c-a251-17897a82375c%2Fe80063d8-e506-4eba-ad5c-9e066646acc9%2Futify.jpg?table=block&id=78fc0cfc-ff32-4316-abba-23c3b05e2c55&spaceId=a98cacb9-e381-4d2c-a251-17897a82375c&width=600&userId=&cache=v2",
-        title: "東大のポータルアプリ「UTify」をリリースしました",
-        author: "小川椋徹",
-        date: "2022.04.22",
-      },
-      {
-        link: "https://stingy-gray-3c3.notion.site/2WINS-548654a605dc434aa419380a214758fa",
-        thumbnail:
-          "https://stingy-gray-3c3.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fa98cacb9-e381-4d2c-a251-17897a82375c%2F36db58d1-bdd7-4911-8010-b7eaa6a0f9cd%2F2wins.jpg?table=block&id=548654a6-05dc-434a-a419-380a214758fa&spaceId=a98cacb9-e381-4d2c-a251-17897a82375c&width=600&userId=&cache=v2",
-        title: "株式会社2WINSのホームページを開設致しました",
-        author: "吉村良太",
-        date: "2022.04.01",
-      },
-    ] as News[];
-  }
-};
+const clients: Client[] = [
+  { src: "/images/clients/vector.svg", alt: "株式会社ベクトル" },
+  {
+    src: "/images/clients/blocksmith.png",
+    alt: "株式会社BLOCKSMITH&Co.",
+  },
+  {
+    src: "/images/clients/reazon.png",
+    alt: "株式会社レアゾンホールディングス",
+  },
+  { src: "/images/clients/axell.png", alt: "株式会社アクセル" },
+  { src: "/images/clients/bitflyer.png", alt: "株式会社bitFlyer" },
+];
 
 const HomePage: Component = () => {
-  const [clients] = createResource(fetchClients);
   const [newsList] = createResource(fetchNews);
 
   return (
@@ -176,7 +98,7 @@ const HomePage: Component = () => {
             （一部抜粋）
           </p>
         </div>
-        <ClientHorizontalScrollView list={clients()} />
+        <ClientHorizontalScrollView list={clients} />
       </section>
       {/* Strengths Section */}
       <section id="strengths" class="bg-background p-8">
@@ -234,17 +156,33 @@ const HomePage: Component = () => {
           </div>
         </div>
         <div class="grid grid-cols-1 gap-8 px-4 py-8 md:grid-cols-2 md:px-16 lg:grid-cols-4">
-          <For each={newsList()} fallback={<></>}>
-            {(news: News, _: Accessor<number>) => (
-              <NewsCard
-                link={news.link}
-                thumbnail={news.thumbnail}
-                title={news.title}
-                author={news.author}
-                date={news.date}
-              />
-            )}
-          </For>
+          <Suspense
+            fallback={
+              <For each={[...Array(4).keys()]} fallback={<></>}>
+                {(_) => (
+                  <NewsCard
+                    link="#"
+                    thumbnail="/images/news/default.jpg"
+                    title="ローディング中..."
+                    author="2WINSメンバー"
+                    date="xxxx-xx-xx"
+                  />
+                )}
+              </For>
+            }
+          >
+            <For each={newsList()?.slice(0, 4)} fallback={<></>}>
+              {(news: News, _: Accessor<number>) => (
+                <NewsCard
+                  link={news.link}
+                  thumbnail={news.thumbnail}
+                  title={news.title}
+                  author={news.author}
+                  date={news.date}
+                />
+              )}
+            </For>
+          </Suspense>
         </div>
         <div class="mx-auto my-2 block w-fit md:my-0 md:hidden">
           <ViewMoreButton href="/news" text="MORE NEWS" show="all" />
