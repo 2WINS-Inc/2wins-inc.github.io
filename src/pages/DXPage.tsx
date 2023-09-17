@@ -22,6 +22,7 @@ const DXPage: Component = () => {
             alt=""
             title="地方中小企業の課題解決"
             body="地方中小企業のDXを支援。お客様の「いまここが不便なんだよね」という声から、課題を明確にし、システムの設計・開発まで一気通貫の支援を致します。"
+            href="/services/dx/support"
           />
           <SolutionCard
             src="/images/top/dx.jpg"
