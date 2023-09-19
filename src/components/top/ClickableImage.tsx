@@ -11,7 +11,7 @@ const ClickableImage: Component<{ href: string; src: string; alt: string }> = (
           <img
             src={props.src}
             alt={props.alt}
-            class="object-cover opacity-90 transition-all duration-500 group-hover:scale-110 group-hover:cursor-pointer"
+            class="aspect-[4/3] w-full object-cover opacity-90 transition-all duration-500 group-hover:scale-110 group-hover:cursor-pointer"
           />
         </A>
       </div>

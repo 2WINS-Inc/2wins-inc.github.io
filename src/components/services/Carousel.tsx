@@ -9,7 +9,7 @@ import {
 
 export const Carousel: ParentComponent = (props) => {
   return (
-    <div class="hide-scrollbar relative inline-flex h-96 snap-x snap-mandatory space-x-4 overflow-x-scroll scroll-smooth rounded-lg w-full">
+    <div class="hide-scrollbar relative inline-flex h-96 w-full snap-x snap-mandatory space-x-4 overflow-x-scroll scroll-smooth rounded-lg">
       {props.children}
     </div>
   );

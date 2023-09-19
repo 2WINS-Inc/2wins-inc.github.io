@@ -16,16 +16,18 @@ const AIPage: Component = () => {
         </p>
         <div class="mt-10 grid gap-8 md:mx-8 lg:grid-cols-2">
           <SolutionCard
-            src="/images/top/ai.jpg"
+            src="/images/services/writing_assistant.jpg"
             alt=""
             title="補助金申請AI"
-            body="政府に補助金を申請する際に必要な書類を自動で生成するAIです。80%の業務効率化、90%の採択率を実現しています。"
+            body="政府に補助金を申請する際に必要な書類を自動で生成するAIです。80%の業務効率化、90%の採択率を実現しています。資料請求はこちら。"
+            href="/#contact"
           />
           <SolutionCard
-            src="/images/top/ai.jpg"
+            src="/images/services/coming.jpg"
             alt=""
             title="Coming soon..."
             body="便利で面白いAIを開発中です。お楽しみに。"
+            href="#"
           />
         </div>
       </section>
