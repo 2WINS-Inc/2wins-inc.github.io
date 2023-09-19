@@ -35,7 +35,7 @@ const DXPage: Component = () => {
             src="/images/services/dev.jpg"
             alt=""
             title="開発現場の課題解決"
-            body="様々な開発プロジェクトへのメンバー参画にも行っており、現場の人手・スキル不足の解消をサポート致します。"
+            body="開発プロジェクト単位で弊社メンバーが参画し、現場の人手・スキル不足の解消をサポート致します。"
             href="/#contact"
           />
         </div>

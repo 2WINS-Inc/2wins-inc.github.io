@@ -19,7 +19,7 @@ const AIPage: Component = () => {
             src="/images/services/writing_assistant.jpg"
             alt=""
             title="補助金申請AI"
-            body="政府に補助金を申請する際に必要な書類を自動で生成するAIです。80%の業務効率化、90%の採択率を実現しています。資料請求はこちら。"
+            body="政府に補助金を申請する際に必要な書類を自動で生成するAIです。業務の時間コストを80%削減し、さらに採択率90%を実現しています。資料請求はこちら。"
             href="/#contact"
           />
           <SolutionCard

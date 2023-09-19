@@ -20,7 +20,7 @@ const SocialCapitalPage: Component = () => {
             alt=""
             title="本郷web3バレー"
             body="AIとブロックチェーンを融合させた未来のテクノロジーを見据えて活動しています。両者を組み合わせた革新的なソリューションの構築を目指していきます。"
-            href="https://2wins-inc.github.io/hongo-web3-valley"
+            href="https://hongo-web3-valley.2winsinc.com/"
           />
           <SolutionCard
             src="/images/strengths/meshi.png"
