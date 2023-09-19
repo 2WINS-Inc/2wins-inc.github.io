@@ -123,10 +123,10 @@ const HomePage: Component = () => {
                 AIとブロックチェーンを融合させた未来のテクノロジーを見据えて活動しています。
                 両者を組み合わせた革新的なソリューションモデルの先駆けを目指していきます。
               </p>
-              <ViewMoreButton href="https://2wins-inc.github.io/hongo-web3-valley" />
+              <ViewMoreButton href="https://hongo-web3-valley.2winsinc.com/" />
             </div>
             <ClickableImage
-              href="https://2wins-inc.github.io/hongo-web3-valley"
+              href="https://hongo-web3-valley.2winsinc.com/"
               src="/images/top/blockchain.jpg"
               alt="Blockchain"
             />
