@@ -16,16 +16,18 @@ const SocialCapitalPage: Component = () => {
         </p>
         <div class="mt-10 grid gap-8 md:mx-8 lg:grid-cols-2">
           <SolutionCard
-            src="/images/services/community.jpg"
+            src="/images/strengths/web3.jpg"
             alt=""
             title="本郷web3バレー"
-            body=""
+            body="AIとブロックチェーンを融合させた未来のテクノロジーを見据えて活動しています。両者を組み合わせた革新的なソリューションの構築を目指していきます。"
+            href="https://2wins-inc.github.io/hongo-web3-valley"
           />
           <SolutionCard
-            src="/images/services/community.jpg"
+            src="/images/strengths/meshi.png"
             alt=""
             title="東大メシ"
-            body=""
+            body="東大生×経営者の交流会を月に一度開催中。産学間の交流により実りのある会話や意義のあるネットワークが生まれることを期待しております。"
+            href="https://2winsinc.notion.site/ec4bbc0becfb425c87ffc945e0b7f958"
           />
         </div>
       </section>
