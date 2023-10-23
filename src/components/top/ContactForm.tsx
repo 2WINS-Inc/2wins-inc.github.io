@@ -163,7 +163,7 @@ const ContactForm: Component = () => {
                 id="message"
                 name="message"
                 class="mt-2 w-full resize-none rounded-sm border-2 bg-onBackground px-4 py-2 text-background"
-                placeholder="自社アプリを作ろうと思っているので、資料請求させてください"
+                placeholder="補助金AIの導入を検討しておりますので資料請求させてください。"
                 rows={5}
                 required
                 oninput={(e) => {
