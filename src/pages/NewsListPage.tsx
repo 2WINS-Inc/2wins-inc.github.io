@@ -31,7 +31,7 @@ const NewsListPage: Component = () => {
             >
               <For each={newsList()}>
                 {(news: News, _: Accessor<number>) => (
-                  <tr class="text-onBackground transition-all duration-500 lg:hover:scale-[1.02] lg:hover:text-cyan-400">
+                  <tr class="transform-gpu text-onBackground transition-all duration-500 lg:hover:scale-[1.02] lg:hover:text-cyan-400">
                     <td class="whitespace-nowrap">
                       <a href={news.link} class="block py-4" target="_blank">
                         {news.date}

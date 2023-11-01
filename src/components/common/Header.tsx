@@ -16,7 +16,7 @@ const Header: Component = () => {
       <div class="flex flex-row items-center justify-between px-6 py-6 md:px-10">
         <A
           href="/"
-          class="z-20 flex flex-row items-start p-2 transition-all duration-500"
+          class="z-20 flex transform-gpu flex-row items-start p-2 transition-all duration-500"
           classList={{
             "text-onBackground delay-700": !open(),
             "text-background": open(),
@@ -27,7 +27,7 @@ const Header: Component = () => {
             <img
               src="/images/logo.svg"
               alt="2WINS"
-              class="h-9 w-9 transition-all duration-500 md:h-10 md:w-10"
+              class="h-9 w-9 transform-gpu transition-all duration-500 md:h-10 md:w-10"
               classList={{
                 "logo-white delay-700": !open(),
                 "logo-blue": open(),
@@ -49,7 +49,7 @@ const Header: Component = () => {
         </div>
       </div>
       <nav
-        class="fixed left-0 top-0 h-screen w-screen -translate-x-full opacity-0 transition-all duration-1000 ease-in-out "
+        class="fixed left-0 top-0 h-screen w-screen -translate-x-full transform-gpu opacity-0 transition-all duration-1000 ease-in-out "
         classList={{
           "opacity-0 -translate-x-full delay-700": !open(),
           "opacity-100 translate-x-0": open(),
@@ -85,7 +85,7 @@ const HeaderLink: Component<{
     <li>
       <A
         href={props.href}
-        class="block whitespace-nowrap text-5xl font-medium tracking-wide hover:translate-x-8 md:text-[80px]"
+        class="block transform-gpu whitespace-nowrap text-5xl font-medium tracking-wide hover:translate-x-8 md:text-[80px]"
         classList={{
           "opacity-0 normal-transition cursor-default": !props.show(),
           "opacity-100 delayed-opacity-transition": props.show(),

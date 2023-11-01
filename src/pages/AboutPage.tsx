@@ -31,7 +31,7 @@ const AboutPage: Component = () => {
         <div class="mt-24">
           <div class="animate-on-scroll-in-view animation-delay-200 mx-auto grid grid-cols-1 gap-4 md:w-full md:grid-cols-2 lg:w-3/4 lg:grid-cols-3 lg:gap-8">
             <ProfileCard
-              src="/images/members/ryoto.png"
+              src="/images/members/ryoto.webp"
               alt="小川 椋徹"
               name="小川 椋徹"
               romaji="Ryoto Ogawa"
@@ -39,7 +39,7 @@ const AboutPage: Component = () => {
               desciption="株式会社2WINSの代表取締役 Co-CEO"
             />
             <ProfileCard
-              src="/images/members/ryota.png"
+              src="/images/members/ryota.webp"
               alt="吉村 良太"
               name="吉村 良太"
               romaji="Ryota Yoshimura"
@@ -47,7 +47,7 @@ const AboutPage: Component = () => {
               desciption="株式会社2WINSの代表取締役 Co-CEO"
             />
             <ProfileCard
-              src="/images/members/kai.png"
+              src="/images/members/kai.webp"
               alt="王 凱"
               name="王 凱"
               romaji="Kai Wang"

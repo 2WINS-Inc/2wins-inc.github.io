@@ -13,7 +13,7 @@ const NewsCard: Component<{
         <img
           src={props.thumbnail}
           alt={props.title}
-          class="my-auto transition-all duration-500 group-hover:scale-110"
+          class="my-auto transform-gpu transition-all duration-500 group-hover:scale-110"
         />
       </div>
       <p class="text-justify text-base font-semibold leading-7 tracking-widest">

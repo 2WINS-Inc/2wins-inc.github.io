@@ -16,14 +16,14 @@ const AIPage: Component = () => {
         </p>
         <div class="mt-10 grid gap-8 md:mx-8 lg:grid-cols-2">
           <SolutionCard
-            src="/images/services/writing_assistant.jpg"
+            src="/images/services/writing_assistant.webp"
             alt=""
             title="補助金申請AI"
             body="政府に補助金を申請する際に必要な書類を自動で生成するAIです。業務の時間コストを80%削減し、さらに採択率90%を実現しています。資料請求はこちら。"
             href="https://monohojo-ai.2winsinc.com"
           />
           <SolutionCard
-            src="/images/services/coming.jpg"
+            src="/images/services/coming.webp"
             alt=""
             title="Coming soon..."
             body="便利で面白いAIを開発中です。お楽しみに。"

@@ -24,7 +24,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c1"
                 index={1}
-                src="/images/services/background_1_1.jpg"
+                src="/images/services/background_1_1.webp"
               >
                 <h3 class="text-2xl font-bold tracking-widest md:text-3xl">
                   開発パートナーサービス
@@ -36,7 +36,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c1"
                 index={2}
-                src="/images/services/background_1_1.jpg"
+                src="/images/services/background_1_1.webp"
               >
                 <h4 class="text-lg font-semibold tracking-widest md:text-2xl">
                   特徴・メリット
@@ -58,7 +58,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c1"
                 index={3}
-                src="/images/services/background_1_3.jpg"
+                src="/images/services/background_1_3.webp"
               >
                 <h4 class="text-lg font-semibold tracking-widest md:text-2xl">
                   事例
@@ -74,7 +74,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c1"
                 index={4}
-                src="/images/services/background_1_3.jpg"
+                src="/images/services/background_1_3.webp"
               >
                 <h4 class="text-lg font-semibold tracking-widest md:text-2xl">
                   株式会社ベクトル様からのFB
@@ -95,7 +95,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c2"
                 index={1}
-                src="/images/services/background_2_1.jpg"
+                src="/images/services/background_2_1.webp"
               >
                 <h3 class="text-2xl font-bold tracking-widest md:text-3xl">
                   役員向けDX研修
@@ -107,7 +107,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c2"
                 index={2}
-                src="/images/services/background_2_1.jpg"
+                src="/images/services/background_2_1.webp"
               >
                 <h4 class="text-lg font-semibold tracking-widest md:text-2xl">
                   特徴・メリット
@@ -127,7 +127,7 @@ const DXSupportPage: Component = () => {
               <CarouselItem
                 carouselID="c2"
                 index={3}
-                src="/images/services/background_2_1.jpg"
+                src="/images/services/background_2_1.webp"
               >
                 <h4 class="text-lg font-semibold tracking-widest md:text-2xl">
                   実績

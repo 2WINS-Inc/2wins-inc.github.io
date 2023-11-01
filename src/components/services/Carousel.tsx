@@ -76,7 +76,7 @@ export const CarouselIndicator: Component<{ id: string; count: number }> = (
                   inline: "center",
                 });
             }}
-            class="h-3 w-3 rounded-full bg-onBackground transition-all duration-300"
+            class="h-3 w-3 transform-gpu rounded-full bg-onBackground transition-all duration-300"
             classList={{
               "opacity-30": activeIndex() !== index + 1,
               "opacity-100": activeIndex() === index + 1,

@@ -25,9 +25,9 @@ const NotFoundPage: Component = () => {
           <A
             href="/"
             class="
-        block h-fit w-fit border-2
-        border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% bg-[size:200%] bg-right px-8 
-        py-4 text-sm font-medium tracking-[0.25rem] transition-all duration-500 ease-in-out hover:bg-left hover:text-background md:px-16 md:text-lg
+        block h-fit w-fit transform-gpu
+        border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% bg-[size:200%] bg-right 
+        px-8 py-4 text-sm font-medium tracking-[0.25rem] transition-all duration-500 ease-in-out hover:bg-left hover:text-background md:px-16 md:text-lg
       "
           >
             ホームに戻る
