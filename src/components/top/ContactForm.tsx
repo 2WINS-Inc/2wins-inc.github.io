@@ -106,7 +106,7 @@ const ContactForm: Component = () => {
                 type="email"
                 id="email"
                 name="email"
-                class="input-field border-2 transition-all duration-500"
+                class="input-field transform-gpu border-2 transition-all duration-500"
                 classList={{
                   "border-red-500": !validateEmail() && pressed(),
                 }}
@@ -135,7 +135,7 @@ const ContactForm: Component = () => {
                 type="text"
                 id="phone"
                 name="phone"
-                class="input-field border-2 transition-all duration-500"
+                class="input-field transform-gpu border-2 transition-all duration-500"
                 classList={{
                   "border-red-500": !validatePhone() && pressed(),
                 }}
@@ -176,7 +176,7 @@ const ContactForm: Component = () => {
           <tr>
             <td class="text-center lg:text-start" colSpan={2}>
               <button
-                class="mt-4 border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% bg-[size:200%] bg-right px-16 py-2 transition-all duration-500 ease-in-out hover:bg-left hover:text-background lg:ml-2"
+                class="mt-4 transform-gpu border-2 border-onBackground bg-gradient-to-l from-background from-50% to-onBackground to-50% bg-[size:200%] bg-right px-16 py-2 transition-all duration-500 ease-in-out hover:bg-left hover:text-background lg:ml-2"
                 type="submit"
               >
                 お問い合わせ送信

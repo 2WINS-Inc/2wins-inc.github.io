@@ -13,15 +13,15 @@ import { fetchNews } from "../utils/notion";
 const clients: Client[] = [
   { src: "/images/clients/vector.svg", alt: "株式会社ベクトル" },
   {
-    src: "/images/clients/blocksmith.png",
+    src: "/images/clients/blocksmith.webp",
     alt: "株式会社BLOCKSMITH&Co.",
   },
   {
-    src: "/images/clients/reazon.png",
+    src: "/images/clients/reazon.webp",
     alt: "株式会社レアゾンホールディングス",
   },
-  { src: "/images/clients/axell.png", alt: "株式会社アクセル" },
-  { src: "/images/clients/bitflyer.png", alt: "株式会社bitFlyer" },
+  { src: "/images/clients/axell.webp", alt: "株式会社アクセル" },
+  { src: "/images/clients/bitflyer.webp", alt: "株式会社bitFlyer" },
 ];
 
 const HomePage: Component = () => {
@@ -68,7 +68,7 @@ const HomePage: Component = () => {
             </div>
             <ClickableImage
               href="/services/dx"
-              src="/images/top/dx.jpg"
+              src="/images/top/dx.webp"
               alt="DX"
             />
           </div>
@@ -82,7 +82,7 @@ const HomePage: Component = () => {
             </div>
             <ClickableImage
               href="/services/ai"
-              src="/images/top/ai.jpg"
+              src="/images/top/ai.webp"
               alt="AI"
             />
           </div>
@@ -127,7 +127,7 @@ const HomePage: Component = () => {
             </div>
             <ClickableImage
               href="https://hongo-web3-valley.2winsinc.com/"
-              src="/images/top/blockchain.jpg"
+              src="/images/top/blockchain.webp"
               alt="Blockchain"
             />
           </div>
@@ -141,7 +141,7 @@ const HomePage: Component = () => {
             </div>
             <ClickableImage
               href="/social-capital"
-              src="/images/top/community.jpg"
+              src="/images/top/community.webp"
               alt="Social Capital"
             />
           </div>
@@ -162,7 +162,7 @@ const HomePage: Component = () => {
                 {(_) => (
                   <NewsCard
                     link="#"
-                    thumbnail="/images/news/default.jpg"
+                    thumbnail="/images/news/default.webp"
                     title="ローディング中..."
                     author="2WINSメンバー"
                     date="xxxx-xx-xx"
