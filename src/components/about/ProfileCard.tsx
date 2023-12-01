@@ -1,12 +1,11 @@
-import { Component, Show, createSignal } from "solid-js";
+import { ParentComponent, createSignal } from "solid-js";
 
-const ProfileCard: Component<{
+const ProfileCard: ParentComponent<{
   src: string;
   alt: string;
   name: string;
   romaji: string;
   title?: string;
-  desciption?: string;
 }> = (props) => {
   const [clicked, setClicked] = createSignal<boolean>(false);
   const toggle = () => setClicked((prev) => !prev);
@@ -42,7 +41,9 @@ const ProfileCard: Component<{
             <p class="-translate-y-0.5 text-sm">{props.romaji}</p>
           </div>
           <p class="text-sm font-medium text-gray-500">{props.title}</p>
-          <p class="py-1 text-xs text-background">{props.desciption}</p>
+          <div class="space-y-3 py-1 text-justify text-xs text-background">
+            {props.children}
+          </div>
         </div>
       </div>
     </div>
